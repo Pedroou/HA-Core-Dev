@@ -1,44 +1,62 @@
-### HA Frontdev development environment:
+# Home Assistant Development Environments
 
+Welcome! This README provides instructions for setting up and running both the **HA Frontend** and **HA Core** development environments.
 
-## Initial setup (One-time)
-# cd HA-Front-Dev
-# script/setup
+---
 
-## Running in development mode
-# cd HA-Front-Dev
-# script/develop
+## HA Frontend Development
 
-## Building the Frontend for production
-# cd HA-Front-Dev
-# script/build_frontend
+### Initial Setup (One-time)
+```bash
+cd HA-Front-Dev
+script/setup
+```
 
+### Running in Development Mode
+```bash
+cd HA-Front-Dev
+script/develop
+```
 
-### HA Core development environment:
+### Building the Frontend for Production
+```bash
+cd HA-Front-Dev
+script/build_frontend
+```
 
+---
 
-## Building docker image
-# cd HA-Dev
-# docker compose up --build
+## HA Core Development
 
-## Running the container
-# cd HA-Dev
-# docker compose up
+### Building the Docker Image
+```bash
+cd HA-Dev
+docker compose up --build
+```
 
--------------------------------------------------------------------------------------------------------
+### Running the Container
+```bash
+cd HA-Dev
+docker compose up
+```
 
-### Script that does both the frontend build, imports it to HA-Core-Dev, and starts the container:
-# cd HA-Dev
-# ./rebuild-front
+---
 
--------------------------------------------------------------------------------------------------------
+## Combined Script: Build Frontend, Import to Core, and Start Container
 
+To build the frontend, import it to HA-Core-Dev, and start the container in one step:
+```bash
+cd HA-Dev
+./rebuild-front
+```
 
+---
 
-# (Old readme)
+## (Old README)
 
-### Commands for oppening HA:
-
-# cd ~/HA-Core-Dev
-# source venv/bin/activate.fish
-# python -m homeassistant
+### Commands for Opening HA
+```bash
+cd ~/HA-Core-Dev
+source venv/bin/activate.fish
+python -m homeassistant
+```
