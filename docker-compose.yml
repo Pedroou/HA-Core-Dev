@@ -1,0 +1,15 @@
+services:
+  homeassistant:
+    build:
+      context: ./HA-Core-Dev
+      dockerfile: Dockerfile
+      args:
+        BUILD_FROM: ghcr.io/home-assistant/amd64-homeassistant:latest
+        BUILD_ARCH: amd64
+    image: ha-netcomet
+    container_name: homeassistant
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./HA-Core-Dev/config:/config:z
+    restart: unless-stopped
