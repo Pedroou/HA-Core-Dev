@@ -1,6 +1,6 @@
 # Home Assistant Development Environments
 
-Welcome! This README provides instructions for setting up and running both the **HA Frontend** and **HA Core** development environments.
+This README provides instructions for setting up and running both the **HA Frontend** and **HA Core** development environments.
 
 ---
 
